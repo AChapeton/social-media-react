@@ -1,0 +1,82 @@
+/* card  */
+
+.card{  
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--cardGray);
+    text-align: center;
+    padding: 1.7em 0;
+    position: relative;
+  }
+  
+  .card::before{
+    content: "";
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .card.facebook::before{
+    background-color: var(--facebook);
+  }
+  
+  .card.twitter::before{
+    background-color: var(--twitter);    
+  }
+  
+  .card.instagram::before{
+    background-image: linear-gradient(to right, var(--instagram-1) 0%, var(--instagram-2) 100%);
+  }
+  
+  .card.youtube::before{
+    background-color: var(--youTube);
+  }
+  .card-title{
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cardTitle);
+    font-size: .9em;
+    font-weight: bold;
+  }
+  
+  .card-title img{
+    margin-right: 5px;
+  }
+  
+  .card-followers{
+    /* border: 1px solid red; */
+  }
+  
+  .card-followers-number{
+    /* border: 1px sold blue; */
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .card-followers-title{
+    /* border: 1px solid green; */
+    display: block;
+    text-transform: uppercase;
+    color: var(--cardTitle);
+    letter-spacing: 5px;
+    font-size: .75em;
+  }
+  
+  .card-today{
+    margin-top: 20px;
+    color: var(--lime-green);
+    font-size: .7em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-today img{
+    margin-right: 5px;
+  }
