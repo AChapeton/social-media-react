@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Switch from './components/Switch'
 import MainCardsList from './components/MainCardsList'
 import Overview from './components/Overview'
-import './globals.css';
+import './App.css';
 
 function App() {
   
