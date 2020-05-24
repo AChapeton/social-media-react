@@ -1,26 +1,25 @@
 import React, {useRef} from 'react'
 import './styles/Switch.css'
 
-function Switch(){
-
+function Switch({setDarkMode, checked, setChecked}){
     const ref = useRef(null)
 
-    function handleChange(){
-        console.log(ref.current.checked)
-        if(ref.current.checked){
-            document.body.classList.remove('is-light-mode');
-            document.body.classList.add('is-dark-mode');
-        }
-        else{
-            document.body.classList.remove('is-dark-mode');
-            document.body.classList.add('is-light-mode');
-        }
+    function handleChange(){       
+        setChecked(ref.current.checked)
+        setDarkMode(ref.current.checked)
     }
 
     return(
         <div className="dark-mode">
             <p className="dark-mode-title">Dark Mode</p>
-            <input ref={ref} onChange={handleChange} type="checkbox" name="" className="checkbox" id="checkbox"/>
+            <input 
+                ref={ref} 
+                onChange={handleChange} 
+                type="checkbox" 
+                checked={checked}
+                name="" 
+                className="checkbox" 
+                id="checkbox"/>
             <label className="switch" htmlFor="checkbox"></label>
         </div>
     )
