@@ -1,5 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Try thr project: (https://social-media-react.netlify.app/)
+
+
+- Original project (just with HTML, CSS and JS) (https://github.com/AChapeton/social-media-dashboard).
+- Checkout the live project: (https://social-media-react.netlify.app/)
 
 ## Available Scripts
 
