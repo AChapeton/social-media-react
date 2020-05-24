@@ -1,7 +1,7 @@
 
 
-- Original project (just with HTML, CSS and JS) (https://github.com/AChapeton/social-media-dashboard).
-- Checkout the live project: (https://social-media-react.netlify.app/)
+- Original project (just with HTML, CSS and JS): https://github.com/AChapeton/social-media-dashboard
+- Checkout the live project: https://social-media-react.netlify.app/
 
 ## Available Scripts
 
